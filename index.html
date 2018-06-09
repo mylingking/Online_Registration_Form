@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="style-sheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="style-sheet">
+    <link href="css/normalize.css" rel="style-sheet">
+    <link heref="css/style.css" rel="style-sheet">
+    <title>THE CODE REVIEW</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>THE CODE REVIEW</h1>
+      </div>
+    </header>
+
+      <h2>Signup for our newsletter</h2>
+      <p>Get the lastest news on how your code is doing right in your inbox</p>
+      <form class="form" action="index.html" method="post">
+        <fieldset>
+
+          <legend>Contact Information</legend>
+
+          <label for="full_name">Full Name:</label>
+          <input type="text" id="full_name" name="user_name" placeholder="required">
+
+          <label for="city">City:</label>
+          <input type="text" id="city" name="user_city">
+
+          <select class="state_selector" name="user_state">
+            <optgroup label="North East">
+              <option value="Beijing">Beijing</option>
+              <option value="Tianjin">Tianjin</option>
+              <option value="Haerbin">Haerbin</option>
+            </optgroup>
+
+            <optgroup label="South East">
+              <option value="Shanghai">Shanghai</option>
+              <option value="Hangzhou">Hangzhou</option>
+              <option value="Xiamen">Xiamen</option>
+            </optgroup>
+
+            <optgroup label="South">
+              <option value="Guangzhou">Guangzhou</option>
+              <option value="HongKong">HongKong</option>
+              <option value="Shenzhen">Shenzhen</option>
+            </optgroup>
+
+            <optgroup label="West">
+              <option value="Chengdu">Chengdu</option>
+              <option value="Lasa">Lasa</option>
+              <option value="Urumqi">Urumqi</option>
+              <option value="Chongqing">Chongqing</option>
+            </optgroup>
+
+          </select>
+
+          <label for="zipcode">Zip Code</label>
+          <input type="number" id="zipcode" name="user_zip_code">
+
+        </fieldset>
+
+        <fieldset>
+
+          <legend>Newsletter</legend>
+
+          <label class="newsletter_type">Select the newsletter you would like to receive</label>
+          <input type="checkbox" id="html_news" name="user_subscription" value="html_news"><label for="html_news">HTML News</label>
+          <input type="checkbox" id="css_news" name="user_subscription" value="css_news"><label for="css_news">CSS News</label>
+          <input type="checkbox" id="javascript_news" name="user_subscription" value="javascript_news"><label for="javascript_news">Javascript News</label>
+
+          <label class="newsletter_format">Newsletter format</label>
+          <input type="radio" id="html_format" name="user_newsletter_format" value="html_format"><label for="html_format">HTML</label><br>
+          <input type="radio" id="plain_text_format" name="user_newsletter_format" value="plain_text_format"><label for="plain_text_format">Plain text</label><br>
+
+          <label class="other_topics" for="other_topics">Other topics you'd like to hear about</label>
+          <textarea name="name" id="other_topics" rows="8" cols="80"></textarea>
+
+        </fieldset>
+
+        <button type="submit">Sign Up</button>
+
+      </form>
+
+    <footer>
+      <small>
+        <p>&copy; Copyright The Code Review</p>
+      </small>
+
+      <address>
+        Please contact me by email: <a href="mailto: wang.ran.henri@gmail.com">this mail</a>
+      </address>
+      </address>
+    </footer>
+
+  </body>
+</html>
