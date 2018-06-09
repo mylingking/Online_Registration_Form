@@ -14,99 +14,100 @@ Chrome, Safari, Opera and Firefox.
     <title>注册表</title>
   </head>
   <body>
+
     <header>
       <div class="container">
         <h1>注册表</h1>
       </div>
     </header>
+      <div class="container">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the lastest news on how your code is doing right in your inbox</p>
+        <form class="form" action="index.html" method="post">
+          <fieldset>
 
-      <h2>Signup for our newsletter</h2>
-      <p>Get the lastest news on how your code is doing right in your inbox</p>
-      <form class="form" action="index.html" method="post">
-        <fieldset>
+            <legend>Contact Information</legend>
 
-          <legend>Contact Information</legend>
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="user_name" placeholder="required">
 
-          <label for="full_name">Full Name:</label>
-          <input type="text" id="full_name" name="user_name" placeholder="required">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="user_email" placeholder="required">
 
-          <label for="email">Email Address:</label>
-          <input type="email" id="email" name="user_email" placeholder="required">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="user_phone_number" placeholder="optional">
 
-          <label for="phone">Phone Number:</label>
-          <input type="tel" id="phone" name="user_phone_number" placeholder="optional">
+            <label for="stree_address">Street Address:</label>
+            <input type="text" id="street_address" name="user_street_address" placeholder="optional">
 
-          <label for="stree_address">Street Address:</label>
-          <input type="text" id="street_address" name="user_street_address" placeholder="optional">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="user_city">
 
-          <label for="city">City:</label>
-          <input type="text" id="city" name="user_city">
+            <label>State:</label>
+            <select class="state_selector" name="user_state">
+              <optgroup label="North East">
+                <option value="Beijing">Beijing</option>
+                <option value="Tianjin">Tianjin</option>
+                <option value="Niaoning">Niaoning</option>
+              </optgroup>
 
-          <label>State:</label>
-          <select class="state_selector" name="user_state">
-            <optgroup label="North East">
-              <option value="Beijing">Beijing</option>
-              <option value="Tianjin">Tianjin</option>
-              <option value="Niaoning">Niaoning</option>
-            </optgroup>
+              <optgroup label="South East">
+                <option value="Shanghai">Shanghai</option>
+                <option value="Jiangsu">Jiangsu</option>
+                <option value="Zhejiang">Zhejiang</option>
+              </optgroup>
 
-            <optgroup label="South East">
-              <option value="Shanghai">Shanghai</option>
-              <option value="Jiangsu">Jiangsu</option>
-              <option value="Zhejiang">Zhejiang</option>
-            </optgroup>
+              <optgroup label="South">
+                <option value="Guangdong">Guangdong</option>
+                <option value="HongKong">HongKong</option>
+                <option value="Fujian">Fujian</option>
+              </optgroup>
 
-            <optgroup label="South">
-              <option value="Guangdong">Guangdong</option>
-              <option value="HongKong">HongKong</option>
-              <option value="Fujian">Fujian</option>
-            </optgroup>
+              <optgroup label="West">
+                <option value="Sichuan">Sichuan</option>
+                <option value="Tibet">Tibet</option>
+                <option value="Xinjiang">Xinjiang</option>
+                <option value="Chongqing">Chongqing</option>
+              </optgroup>
 
-            <optgroup label="West">
-              <option value="Sichuan">Sichuan</option>
-              <option value="Tibet">Tibet</option>
-              <option value="Xinjiang">Xinjiang</option>
-              <option value="Chongqing">Chongqing</option>
-            </optgroup>
+            </select>
 
-          </select>
+            <label for="zipcode">Zip Code</label>
+            <input type="number" id="zipcode" name="user_zip_code">
 
-          <label for="zipcode">Zip Code</label>
-          <input type="number" id="zipcode" name="user_zip_code">
+          </fieldset>
 
-        </fieldset>
+          <fieldset>
 
-        <fieldset>
+            <legend>Newsletter</legend>
 
-          <legend>Newsletter</legend>
+            <label class="newsletter_type">Select the newsletter you would like to receive</label>
+            <input type="checkbox" id="html_news" name="user_subscription" value="html_news"><label for="html_news">HTML News</label>
+            <input type="checkbox" id="css_news" name="user_subscription" value="css_news"><label for="css_news">CSS News</label>
+            <input type="checkbox" id="javascript_news" name="user_subscription" value="javascript_news"><label for="javascript_news">Javascript News</label>
 
-          <label class="newsletter_type">Select the newsletter you would like to receive</label>
-          <input type="checkbox" id="html_news" name="user_subscription" value="html_news"><label for="html_news">HTML News</label>
-          <input type="checkbox" id="css_news" name="user_subscription" value="css_news"><label for="css_news">CSS News</label>
-          <input type="checkbox" id="javascript_news" name="user_subscription" value="javascript_news"><label for="javascript_news">Javascript News</label>
+            <label class="newsletter_format">Newsletter format</label>
+            <input type="radio" id="html_format" name="user_newsletter_format" value="html_format"><label for="html_format">HTML</label><br>
+            <input type="radio" id="plain_text_format" name="user_newsletter_format" value="plain_text_format"><label for="plain_text_format">Plain text</label><br>
 
-          <label class="newsletter_format">Newsletter format</label>
-          <input type="radio" id="html_format" name="user_newsletter_format" value="html_format"><label for="html_format">HTML</label><br>
-          <input type="radio" id="plain_text_format" name="user_newsletter_format" value="plain_text_format"><label for="plain_text_format">Plain text</label><br>
+            <label class="other_topics" for="other_topics">Other topics you'd like to hear about</label>
+            <textarea name="name" id="other_topics" rows="8" cols="80"></textarea>
 
-          <label class="other_topics" for="other_topics">Other topics you'd like to hear about</label>
-          <textarea name="name" id="other_topics" rows="8" cols="80"></textarea>
+          </fieldset>
 
-        </fieldset>
+          <button type="submit">Sign Up</button>
 
-        <button type="submit">Sign Up</button>
-
-      </form>
-
+        </form>
+      </div>
     <footer>
-      <small>
-        <p>&copy; Copyright The Code Review</p>
-      </small>
+        <small>
+          <p>&copy; Copyright The Code Review</p>
+        </small>
 
-      <address>
-        Please contact me by email: <a href="mailto: wang.ran.henri@gmail.com">this mail</a>
-      </address>
-      </address>
+        <address>
+          Please contact me by email: <a href="mailto: wang.ran.henri@gmail.com">this mail</a>
+        </address>
+        </address>
     </footer>
 
   </body>
