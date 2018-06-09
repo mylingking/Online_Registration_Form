@@ -1,0 +1,21 @@
+/* Table of content
+  1.General settings
+  2.Header
+  3.Body
+  4.Footer
+  5.Media Queries
+*/
+
+
+/* -----------------------------------
+ 1. Genral Settings
+--------------------------------------*/
+
+* {
+box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', 'Raleway', sans-serif;
+  line-height: 1.6;
+}
