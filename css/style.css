@@ -24,13 +24,16 @@ body {
 
 .container {
   margin:auto;
-  text-align:center;
   max-width:90%;
 }
 
 header {
   min-width:100%;
   background-color:slategrey;
+}
+
+h1,h2 {
+  text-align: center;
 }
 
 /* -----------------------------------
@@ -58,6 +61,12 @@ label {
   display:block;
 }
 
+legend {
+  text-align: left;
+  font-weight:600;
+  font-size:26px;
+}
+
 input {
   display:block;
   text-align:left;
@@ -75,7 +84,7 @@ option {
   padding-top:0;
 }
 
-input[placeholder] {
+::placeholder {
   text-align:right;
 }
 
@@ -88,6 +97,11 @@ input[placeholder] {
   padding-bottom: 3em;
   border-bottom:4px black solid;
   margin-bottom:4px; /*to narrow the gap between the 2 botttom lines*/
+  text-align: center;
+}
+
+.hr_line {
+  border-top:solid 1px black;
 }
 
 .first_fieldset {
@@ -112,12 +126,50 @@ input[placeholder] {
 
 .second_fieldset {
   margin-top:2em;
-  max-width:90%;
 }
 
-.second_fieldset input,
 .second_fieldset label {
   display:inline-block;
-  width:auto;
   text-align: left;
+  margin-bottom:14px;
+}
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width:18px;
+  text-align: left;
+  height:25px;
+  margin-top:0;
+  margin-bottom:14px;
+  margin-right: 20px;
+  vertical-align: bottom;
+}
+
+textarea {
+  width:100%;
+  border:none;
+  border-radius: 10px;
+  background-color: rgb(237, 241, 247);
+}
+
+button {
+  color: white;
+  font-weight:600;
+  font-size: 20px;
+  width:100%;
+  border-radius: 4px;
+  background-color:rgb(61, 165, 146);
+  height: 50px;
+  border: 0;
+  box-shadow: 0 -1px rgba(255,255,255,0.1) inset;
+}
+
+/* -----------------------------------
+ 4. Main Footer
+--------------------------------------*/
+
+.main_footer {
+  text-align:center;
 }

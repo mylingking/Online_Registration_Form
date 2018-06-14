@@ -11,21 +11,22 @@ Chrome, Safari, Opera, IE11 and Firefox.
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-    <title>注册表</title>
+    <title>Sign Up</title>
   </head>
   <body>
 
     <header>
       <div class="container">
-        <h1 class="header_title">注册表</h1>
+        <h1 class="header_title">THE CODE REVIEW</h1>
       </div>
     </header>
-      <div class="container">
-        <h2>Signup for our newsletter</h2>
-        <p class="instruction">Get the lastest news on how your code is doing right in your inbox</p>
+        <div class="container">
+          <h2>Signup for our newsletter</h2>
+          <p class="instruction">Get the lastest news on how your code is doing right in your inbox</p>
+          <hr class="hr_line">
+        </div>
         <form class="form" action="index.html" method="post">
-          <div class="first_fieldset">
-            <fieldset>
+            <fieldset class="container">
 
               <legend>Contact Information</legend>
 
@@ -77,32 +78,31 @@ Chrome, Safari, Opera, IE11 and Firefox.
               <input type="text" id="zipcode" name="user_zip_code">
 
             </fieldset>
-          </div>
+          <hr class="hr_line container">
+          <div class="container">
+            <fieldset class="second_fieldset">
 
+              <legend>Newsletter</legend>
 
-          <fieldset class="second_fieldset container">
+              <label class="newsletter_type">Select the newsletter you would like to receive</label><br>
 
-            <legend>Newsletter</legend>
+              <input type="checkbox" id="html_news" name="user_subscription" value="html_news"><label for="html_news">HTML News</label><br>
+              <input type="checkbox" id="css_news" name="user_subscription" value="css_news"><label for="css_news">CSS News</label><br>
+              <input type="checkbox" id="javascript_news" name="user_subscription" value="javascript_news"><label for="javascript_news">Javascript News</label><br>
 
-            <label class="newsletter_type">Select the newsletter you would like to receive</label><br>
-            <input type="checkbox" id="html_news" name="user_subscription" value="html_news"><label for="html_news">HTML News</label><br>
-            <input type="checkbox" id="css_news" name="user_subscription" value="css_news"><label for="css_news">CSS News</label><br>
-            <input type="checkbox" id="javascript_news" name="user_subscription" value="javascript_news"><label for="javascript_news">Javascript News</label><br>
+              <label class="newsletter_format">Newsletter format</label><br>
+              <input type="radio" id="html_format" name="user_newsletter_format" value="html_format"><label for="html_format">HTML</label><br><br>
+              <input type="radio" id="plain_text_format" name="user_newsletter_format" value="plain_text_format"><label for="plain_text_format">Plain text</label><br>
 
-            <label class="newsletter_format">Newsletter format</label><br>
-            <input type="radio" id="html_format" name="user_newsletter_format" value="html_format"><label for="html_format">HTML</label><br><br>
-            <input type="radio" id="plain_text_format" name="user_newsletter_format" value="plain_text_format"><label for="plain_text_format">Plain text</label><br>
+              <label class="other_topics" for="other_topics">Other topics you'd like to hear about</label><br>
+              <textarea name="name" id="other_topics" rows="8" cols="80"></textarea><br>
 
-            <label class="other_topics" for="other_topics">Other topics you'd like to hear about</label><br>
-            <textarea name="name" id="other_topics" rows="8" cols="80"></textarea><br>
+            </fieldset>
 
-          </fieldset>
-
-          <button type="submit">Sign Up</button>
+            <button type="submit">Sign Up</button>
 
         </form>
-      </div>
-    <footer>
+    <footer class="main_footer">
         <small>
           <p>&copy; Copyright The Code Review</p>
         </small>
@@ -111,6 +111,8 @@ Chrome, Safari, Opera, IE11 and Firefox.
           Please contact me by email: <a href="mailto: wang.ran.henri@gmail.com">this mail</a>
         </address>
     </footer>
+
+    </div>
 
   </body>
 </html>
