@@ -216,4 +216,8 @@ button {
     padding:15px;
   }
 
+  input[type="radio"] {
+    margin-bottom:0;
+  }
+
 }
