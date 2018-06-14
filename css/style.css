@@ -47,6 +47,11 @@ h1,h2 {
   padding-bottom:1em;
 }
 
+li {
+  list-style: none;
+  display:block;
+}
+
 fieldset {
   border:none; /*to eliminate the default border*/
   padding-left: 0; /*to fill the content to edge*/
@@ -102,14 +107,6 @@ option {
 
 .hr_line {
   border-top:solid 1px black;
-}
-
-.first_fieldset {
-  border-top:1px solid black;
-  border-bottom: 1px solid black;
-  margin-top: 1px;
-  padding-top:1em;
-  padding-bottom:1em;
 }
 
 .state_selector {
@@ -173,4 +170,25 @@ button {
 
 .main_footer {
   text-align:center;
+}
+
+
+/* -----------------------------------
+ 5. Media Querie
+--------------------------------------*/
+@media(min-width:768px) {
+  .container {
+    max-width:50%;
+  }
+
+  .flex_container {
+    display:flex;
+    flex-direction: row;
+  }
+
+  .first_fieldset {
+    display: flex;
+    flex-direction:row;
+  }
+
 }
