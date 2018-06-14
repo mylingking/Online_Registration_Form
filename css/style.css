@@ -36,6 +36,16 @@ h1,h2 {
   text-align: center;
 }
 
+input:hover {
+
+  transition:1.7;
+  background-color: rgb(218, 239, 242);
+}
+
+input:focus {
+  border-bottom: 4px solid rgb(244, 133, 14);
+}
+
 /* -----------------------------------
  2. Header
 --------------------------------------*/
