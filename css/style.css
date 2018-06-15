@@ -121,6 +121,11 @@ option {
   text-align: center;
 }
 
+#plain_text_lable,
+#html_letter_lable {
+  margin-bottom:0;
+}
+
 .hr_line {
   border-top:solid 1px black;
 }
