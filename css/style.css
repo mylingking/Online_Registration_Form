@@ -39,7 +39,7 @@ h1,h2 {
 
 input:hover {
 
-  transition:1.7;
+  transition:1s;
   background-color: rgb(218, 239, 242);
 }
 
@@ -48,7 +48,7 @@ input:hover {
 }
 
 button:active {
-  background-color: #a333;
+  background-color: rgb(67, 144, 158);
 }
 
 /* -----------------------------------
